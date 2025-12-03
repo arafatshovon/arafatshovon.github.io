@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - PhD Aspirant in Electrical and Electronic Engineering">
+    <title>Yasir Arafat Prodhan | PhD Aspirant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Your Name</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#publications">Publications</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="assets/profile.jpg" alt="Your Name" onerror="this.src='https://via.placeholder.com/280x280/4a5568/ffffff?text=Your+Photo'">
+                </div>
+                <div class="hero-text">
+                    <h1>Your Name</h1>
+                    <p class="subtitle">PhD Aspirant | Electrical & Electronic Engineering</p>
+                    <p class="bio">
+                        Hello! I am a recent graduate in Electrical and Electronic Engineering (EEE), 
+                        currently seeking PhD opportunities in the United States. My research interests 
+                        span across <strong>signal processing</strong>, <strong>machine learning</strong>, 
+                        and <strong>embedded systems</strong>.
+                    </p>
+                    <p class="bio">
+                        During my undergraduate studies, I worked on several research projects and 
+                        developed a strong foundation in both theoretical concepts and practical 
+                        implementations. I am passionate about solving complex engineering problems 
+                        and contributing to cutting-edge research.
+                    </p>
+                    <div class="social-links">
+                        <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="assets/cv.pdf" target="_blank" title="CV"><i class="fas fa-file-pdf"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section class="section interests">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-brain"></i>
+                    <span>Machine Learning</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-wave-square"></i>
+                    <span>Signal Processing</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-microchip"></i>
+                    <span>Embedded Systems</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-robot"></i>
+                    <span>Computer Vision</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Deep Learning</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Power Electronics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Electrical & Electronic Engineering</h3>
+                        <p class="institution">Your University Name</p>
+                        <p class="date">2019 - 2023</p>
+                        <p class="description">
+                            <strong>CGPA:</strong> 3.XX/4.00<br>
+                            <strong>Thesis:</strong> "Your Thesis Title Here"<br>
+                            <strong>Relevant Coursework:</strong> Digital Signal Processing, Machine Learning, 
+                            Control Systems, Power Electronics, Communication Systems
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <p class="institution">Your College Name</p>
+                        <p class="date">2017 - 2019</p>
+                        <p class="description">
+                            <strong>GPA:</strong> 5.00/5.00<br>
+                            <strong>Group:</strong> Science
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section publications" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <div class="publication-year">2024</div>
+                    <div class="publication-content">
+                        <h3>Your Paper Title Here: A Novel Approach to Something Interesting</h3>
+                        <p class="authors"><strong>Your Name</strong>, Co-Author Name, Another Author</p>
+                        <p class="venue"><em>Journal/Conference Name</em>, 2024</p>
+                        <p class="abstract">
+                            Brief description of the paper. This work presents a novel approach to...
+                        </p>
+                        <div class="publication-links">
+                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-code"></i> Code</a>
+                            <a href="#" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-content">
+                        <h3>Another Research Paper Title</h3>
+                        <p class="authors">First Author, <strong>Your Name</strong>, Third Author</p>
+                        <p class="venue"><em>IEEE Conference on Something</em>, 2023</p>
+                        <p class="abstract">
+                            This paper investigates the application of machine learning techniques to...
+                        </p>
+                        <div class="publication-links">
+                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Project 1" onerror="this.src='https://via.placeholder.com/400x250/4a5568/ffffff?text=Project+1'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title One</h3>
+                        <p>Brief description of the project. What problem does it solve? What technologies were used?</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Project 2" onerror="this.src='https://via.placeholder.com/400x250/4a5568/ffffff?text=Project+2'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title Two</h3>
+                        <p>Another project description. Highlight key achievements and technical details.</p>
+                        <div class="project-tags">
+                            <span>MATLAB</span>
+                            <span>Arduino</span>
+                            <span>PCB Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project3.jpg" alt="Project 3" onerror="this.src='https://via.placeholder.com/400x250/4a5568/ffffff?text=Project+3'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title Three</h3>
+                        <p>Describe your undergraduate thesis or a significant capstone project here.</p>
+                        <div class="project-tags">
+                            <span>Deep Learning</span>
+                            <span>PyTorch</span>
+                            <span>Research</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" target="_blank"><i class="fas fa-file-pdf"></i> Thesis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Research Assistant</h3>
+                        <p class="institution">Lab Name, University Name</p>
+                        <p class="date">Jan 2023 - Present</p>
+                        <p class="description">
+                            Worked on developing machine learning models for signal processing applications. 
+                            Collaborated with faculty members on research projects and contributed to paper writing.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Engineering Intern</h3>
+                        <p class="institution">Company Name</p>
+                        <p class="date">Jun 2022 - Aug 2022</p>
+                        <p class="description">
+                            Gained hands-on experience in embedded systems development. 
+                            Designed and implemented firmware for IoT devices.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Teaching Assistant</h3>
+                        <p class="institution">Department of EEE, University Name</p>
+                        <p class="date">Sep 2022 - Dec 2022</p>
+                        <p class="description">
+                            Assisted in conducting lab sessions for undergraduate courses. 
+                            Helped students understand complex concepts in circuit analysis and electronics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>C/C++</span>
+                        <span>MATLAB</span>
+                        <span>Verilog</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> ML/DL Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Keras</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>Linux</span>
+                        <span>Docker</span>
+                        <span>LaTeX</span>
+                        <span>Arduino</span>
+                        <span>Raspberry Pi</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Hardware/EDA</h3>
+                    <div class="skill-tags">
+                        <span>Altium Designer</span>
+                        <span>KiCad</span>
+                        <span>LTSpice</span>
+                        <span>Cadence</span>
+                        <span>FPGA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="section awards">
+        <div class="container">
+            <h2 class="section-title">Awards & Achievements</h2>
+            <div class="awards-list">
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="award-content">
+                        <h3>Dean's List Award</h3>
+                        <p>University Name, 2022</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-content">
+                        <h3>1st Place - Engineering Competition</h3>
+                        <p>Competition Name, 2021</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-award"></i></div>
+                    <div class="award-content">
+                        <h3>Merit Scholarship</h3>
+                        <p>University Name, 2019-2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p>I am actively seeking PhD positions for Fall 2025. If you are a professor looking for motivated students or if you have any questions about my work, please feel free to reach out!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Your City, Country</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p class="footer-note">PhD Aspirant in Electrical & Electronic Engineering</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
