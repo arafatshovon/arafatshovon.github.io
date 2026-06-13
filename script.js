@@ -63,6 +63,16 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     start();
 });
 
+document.querySelectorAll('.abstract-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const abstract = document.getElementById(button.getAttribute('aria-controls'));
+        const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+        button.setAttribute('aria-expanded', String(!isOpen));
+        abstract.hidden = isOpen;
+    });
+});
+
 const sections = [...document.querySelectorAll('main section[id]')];
 const links = [...document.querySelectorAll('.nav-links a')];
 

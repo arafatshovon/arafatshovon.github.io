@@ -42,15 +42,15 @@
                 <p class="eyebrow">Machine Learning Engineer &middot; Prospective PhD Student</p>
                 <h1><strong>Yasir Arafat</strong> Prodhan</h1>
                 <p class="lead">I build learning systems for medical imaging, multimodal understanding, and generative vision.</p>
-                <p>I am an Electrical and Electronic Engineering graduate from <strong>Bangladesh University of Engineering and Technology</strong> and currently a Machine Learning Engineer at Advanced Chemical Industries. My work focuses on turning recent advances in AI into useful, reliable systems.</p>
-                <p>I am preparing for <strong>Fall 2027 PhD applications</strong>. I am especially interested in multimodal learning, diffusion and flow-matching models, biomedical imaging, and accelerated medical image reconstruction.</p>
+                <p>Hello! I am a recent graduate in Electrical and Electronic Engineering (EEE), currently seeking PhD opportunities in the United States. My research interests span across <strong>Multi-Modal Learning</strong>, <strong>Generative Vision Models (Diffusion &amp; Flow Matching)</strong>, <strong>AI in Healthcare &amp; Biomedical Imaging</strong>, and <strong>Medical Image Reconstruction &amp; Analysis</strong>.</p>
+                <p>During my undergraduate studies, I worked on several research projects and developed a strong foundation in both theoretical concepts and practical implementations. I am passionate about solving complex engineering problems and contributing to cutting-edge research.</p>
                 <div class="hero-actions">
                     <a class="button primary" href="#publications">View research</a>
                     <a class="button" href="mailto:arafatshovon1897@gmail.com">Get in touch</a>
                 </div>
             </div>
             <div class="portrait-wrap">
-                <img src="assets/487808395_2900353320295641_6459015845582178026_n.jpg" alt="Portrait of Yasir Arafat Prodhan">
+                <img src="assets/FLOW/me.jpg" alt="Portrait of Yasir Arafat Prodhan">
                 <span class="status"><span></span> Open to PhD opportunities</span>
             </div>
         </section>
@@ -90,9 +90,9 @@
 
             <article class="publication">
                 <div class="paper-visual carousel" data-interval="3200" aria-label="Figures from MRI reconstruction research">
-                    <img class="active" src="assets/Screenshot from 2025-12-07 13-54-00.png" alt="MRI reconstruction research figure">
-                    <img src="assets/0-4.png" alt="Reconstructed sample images, digits zero through four">
-                    <img src="assets/5-9.png" alt="Reconstructed sample images, digits five through nine">
+                    <img class="active" src="assets/MRI/Model.png" alt="Variational network architecture with wavelet UNET">
+                    <img src="assets/MRI/WCNN.png" alt="Wavelet Based UNET architecture">
+                    <img src="assets/MRI/knee_multi_result.png" alt="Reconstructed knee images (x4 Acceleration)">
                     <div class="carousel-dots" aria-hidden="true"></div>
                 </div>
                 <div class="paper-copy">
@@ -100,16 +100,22 @@
                     <h3>Variational Network with Wavelet-based UNET in Accelerated MRI Reconstruction from Under-Sampled K-space Data</h3>
                     <p class="authors"><strong>Yasir Arafat Prodhan</strong>, Shaikh Anowarul Fattah</p>
                     <p class="venue">Undergraduate Thesis, 2024&ndash;2025</p>
-                    <p class="paper-summary">A multi-scale wavelet CNN integrated with a variational network for faster, higher-quality MRI reconstruction.</p>
-                    <div class="paper-links"><a href="https://github.com/arafatshovon" target="_blank" rel="noreferrer">CODE</a></div>
+                    <div class="paper-links">
+                        <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-mri">ABS</button>
+                        <span class="paper-link-disabled" aria-label="Paper link not available yet">PAPER</span>
+                        <a href="https://github.com/arafatshovon/mri_reconstruction" target="_blank" rel="noreferrer">CODE</a>
+                    </div>
+                    <div class="paper-abstract" id="abstract-mri" hidden>
+                        <p>Fully sampled MRI acquisitions require dense traversal of k-space, resulting in inherently long scan times that limit clinical throughput and increase susceptibility to patient motion. A common strategy to accelerate MRI is to acquire only a subset of k-space measurements and reconstruct the missing information computationally. However, direct reconstruction from undersampled k-space is a severely ill-posed inverse problem that introduces aliasing artifacts, noise amplification, and loss of fine anatomical details. Conventional methods such as Parallel Imaging (PI) and Compressed Sensing (CS) partially address these challenges, while recent deep learning approaches have significantly improved reconstruction quality. Nevertheless, preserving high-frequency structures and maintaining robustness under aggressive undersampling remain challenging for existing convolution-based variational network frameworks. In this work, we propose a Variational Network with Wavelet-based U-Net (W-UNet) for accelerated MRI reconstruction from undersampled k-space data. The proposed framework combines physics-guided iterative reconstruction with learnable multi-scale frequency representations. Specifically, standard pooling operations are replaced by Discrete Wavelet Transform (DWT) and Inverse Wavelet Transform (IDWT) modules, enabling lossless downsampling while retaining both low-frequency structural information and high-frequency edge details. Integrated within the refinement and sensitivity map estimation stages of a variational network, the proposed design improves artifact suppression, feature preservation, and reconstruction fidelity for both single-coil and multi-coil settings. Our method achieves state-of-the-art results on the fastMRI knee and M4Raw brain datasets. We further validate the effectiveness of wavelet-based feature decomposition through comprehensive ablation studies, confirming its contribution to accelerated MRI reconstruction.</p>
+                    </div>
                 </div>
             </article>
 
             <article class="publication">
                 <div class="paper-visual carousel" data-interval="3800" aria-label="Figures from DenseROPNet research">
-                    <img class="active" src="assets/0-4.png" alt="Representative medical image classification samples">
-                    <img src="assets/5-9.png" alt="Additional representative classification samples">
-                    <img src="assets/Screenshot from 2025-12-07 13-54-00.png" alt="Model generation results">
+                    <img class="active" src="assets/ROP/clahe.png" alt="Clahe Image Processing">
+                    <img src="assets/ROP/grad1.png" alt="Grad-Cam visualization of DenseROPNet">
+                    <img src="assets/ROP/ranb.png" alt="Residual Attention Network Block Architecture">
                     <div class="carousel-dots" aria-hidden="true"></div>
                 </div>
                 <div class="paper-copy">
@@ -117,16 +123,22 @@
                     <h3>Detection and Classification of Retinopathy of Prematurity on Multi-Source Fundus Images Using DenseROPNet</h3>
                     <p class="authors">Sadad Hasan, <strong>Yasir Arafat Prodhan</strong>, Mohammad Imamul Hassan Bhuiyan</p>
                     <p class="venue">IEEE International Biomedical Instrumentation and Technology Conference</p>
-                    <p class="paper-summary">An attention-based CNN for robust ROP screening across fundus datasets from different populations.</p>
-                    <div class="paper-links"><a href="https://github.com/arafatshovon/DenseROPNet" target="_blank" rel="noreferrer">CODE</a></div>
+                    <div class="paper-links">
+                        <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-rop">ABS</button>
+                        <span class="paper-link-disabled" aria-label="Paper link not available yet">PAPER</span>
+                        <a href="https://github.com/arafatshovon/DenseROPNet" target="_blank" rel="noreferrer">CODE</a>
+                    </div>
+                    <div class="paper-abstract" id="abstract-rop" hidden>
+                        <p>Retinopathy of Prematurity (ROP) is disease affecting mostly preterm babies with low birth-weights. Being the leading cause of vision loss in case of children worldwide \cite{c1}, it even caused epidemics in the 20th century \cite{c2}. Since it shows no early symptoms \cite{b23}, it becomes tough to diagnose ROP at an early stage. The stages of ROP depend on the level of the abnormal growth of the blood vessels of the retina. More importantly, detecting the stage of ROP is very difficult as there is no clear demarcation and the level of detachment or disruption of retina is hard to comprehend seeing fundus/retinal images. In the recent years, deep learning models and algorithms have proven their potentiality in early detection of several diseases and classification of stages based on medical images</p>
+                    </div>
                 </div>
             </article>
 
             <article class="publication">
                 <div class="paper-visual carousel" data-interval="4400" aria-label="Figures from PolarSegNet research">
-                    <img class="active" src="assets/5-9.png" alt="Representative segmentation samples">
-                    <img src="assets/0-4.png" alt="Additional representative segmentation samples">
-                    <img src="assets/Screenshot from 2025-12-07 13-54-00.png" alt="Model output samples">
+                    <img class="active" src="assets/SEG/pipeline.png" alt="Model PipeLine">
+                    <img src="assets/SEG/media_images_predictions_6_6b0d004a66eebedaf6b6.png" alt="Dataset sample">
+                    <img src="assets/SEG/segmentation_overlap_result.png" alt="Segmentation Output">
                     <div class="carousel-dots" aria-hidden="true"></div>
                 </div>
                 <div class="paper-copy">
@@ -134,10 +146,13 @@
                     <h3>Skin Cancer Semantic Segmentation</h3>
                     <p class="authors">Anindha Dhar, Diganta Sikdar, <strong>Yasir Arafat Prodhan</strong>, Sourov Joardar</p>
                     <p class="venue">IEEE International Conference on Electrical, Computer and Communication Engineering</p>
-                    <p class="paper-summary">A comparison of UNET and TransUNET with polar coordinate transformation for accurate lesion segmentation.</p>
                     <div class="paper-links">
+                        <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-skin">ABS</button>
                         <a href="https://ieeexplore.ieee.org/document/11013785" target="_blank" rel="noreferrer">PAPER</a>
                         <a href="https://github.com/arafatshovon/PolarSegNet" target="_blank" rel="noreferrer">CODE</a>
+                    </div>
+                    <div class="paper-abstract" id="abstract-skin" hidden>
+                        <p>Image segmentation is an important segment of medical image diagnosis. Due to the recent advancement in the field of deep learning, image segmentation can be possible without any human involvement. Applications of CNN and transformer based models are being used in every field nowadays. CNNs based models can learn the local features efficiently whereas transformer based models can learn the global features which makes combining these two a great tool for medical image segmentation. Again, converting Cartesian image to polar image reduces the dimension of the elliptical and complex decision boundaries of medical images to a more simple one. In this study, we will try to compare the scores of CNN and transformer based models on the dataset ISIC-2018 for medical image semantic segmentation. For the CNN based model, we will use UNET architecture. We will also use TransUNET which leverages the benefits of both CNNs and transformer. We will also compare the scores obtained from both Cartesian images and polar images. Index Terms—Convolution neural network, medical image processing, medical image segmentation, semantic segmentation, TransUnet, Stacked Hourglass</p>
                     </div>
                 </div>
             </article>
@@ -156,8 +171,13 @@
         <section class="section container" id="projects">
             <div class="section-heading"><div><p class="eyebrow">Selected Work</p><h2>Projects</h2></div></div>
             <article class="featured-project">
-                <img src="assets/Screenshot from 2025-12-07 13-54-00.png" alt="Generated MNIST digit samples">
-                <div>
+                <div class="project-visual carousel" data-interval="3600" aria-label="Figures from the flow-matching project">
+                    <img class="active" src="assets/FLOW/Screenshot from 2025-12-07 13-54-00.png" alt="Generated MNIST digit samples">
+                    <img src="assets/FLOW/0-4.png" alt="Generated MNIST samples for digits zero through four">
+                    <img src="assets/FLOW/5-9.png" alt="Generated MNIST samples for digits five through nine">
+                    <div class="carousel-dots" aria-hidden="true"></div>
+                </div>
+                <div class="project-copy">
                     <p class="eyebrow">Generative Vision &middot; PyTorch</p>
                     <h3>MNIST Digit Generation using Flow-Based Models</h3>
                     <p>A PyTorch implementation of conditional flow matching that demonstrates controllable generation on handwritten digit data.</p>
@@ -170,9 +190,18 @@
             <div class="container">
                 <div class="section-heading"><div><p class="eyebrow">Recognition</p><h2>Awards &amp; Achievements</h2></div></div>
                 <div class="award-grid">
-                    <article><span>2024</span><h3>Top 10 Finalist</h3><p>Robi Datathon 3.0</p></article>
-                    <article><span>2023</span><h3>Finalist</h3><p>IEEE Video &amp; Image Processing Cup</p></article>
-                    <article><span>2023</span><h3>Finalist</h3><p>Deep Learning Sprint, CSE-BUET</p></article>
+                    <article>
+                        <div class="award-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+                        <div class="award-copy"><h3>Finalist (Top 10 Teams) Robi Datathon 3.0</h3><p>Robi axiata Limited, May 2024</p></div>
+                    </article>
+                    <article>
+                        <div class="award-icon"><i class="fas fa-medal" aria-hidden="true"></i></div>
+                        <div class="award-copy"><h3>Finalist IEEE VIP Cup, 2023</h3><p>IEEE Video &amp; Image Processing Cup</p></div>
+                    </article>
+                    <article>
+                        <div class="award-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                        <div class="award-copy"><h3>Finalist Deep Learning Sprint (Bangla Document Layout Analysis)</h3><p>CSE-BUET, 2023</p></div>
+                    </article>
                 </div>
             </div>
         </section>
