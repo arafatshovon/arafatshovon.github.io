@@ -97,10 +97,13 @@ img { max-width: 100%; }
 .experience-list h3 { margin: 0; font-size: 1.1rem; }
 .experience-list p { margin: 5px 0; color: var(--muted); font-size: .9rem; }
 .experience-list .institution { color: var(--text); font-weight: 600; }
+.experience-bullets { margin: 14px 0 0; padding-left: 18px; display: grid; gap: 8px; }
+.experience-bullets li { color: var(--muted); font-size: .9rem; line-height: 1.65; }
 .featured-project { display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow); }
 .project-visual { position: relative; min-height: 360px; overflow: hidden; background: #f8f8fa; }
 .project-visual img { position: absolute; inset: 0; width: 100%; height: 100%; padding: 28px; object-fit: contain; opacity: 0; transform: scale(1.025); transition: opacity .8s ease, transform 1.2s ease; }
 .project-visual img.active { opacity: 1; transform: scale(1); }
+.featured-project + .featured-project { margin-top: 40px; }
 .project-copy { align-self: center; padding: 46px; }
 .featured-project h3 { margin: 0; font-size: 1.5rem; letter-spacing: -.03em; }
 .featured-project p:not(.eyebrow) { color: var(--muted); }
