@@ -42,7 +42,7 @@
                 <p class="eyebrow">Machine Learning Engineer &middot; Prospective PhD Student</p>
                 <h1><strong>Yasir Arafat</strong> Prodhan</h1>
                 <p class="lead">I build learning systems for medical imaging, multimodal understanding, and generative vision.</p>
-                <p>Hello! I am a recent graduate in Electrical and Electronic Engineering (EEE), currently seeking PhD opportunities in the United States. My research interests span across <strong>Multi-Modal Learning</strong>, <strong>Generative Vision Models (Diffusion &amp; Flow Matching)</strong>, <strong>AI in Healthcare &amp; Biomedical Imaging</strong>, and <strong>Medical Image Reconstruction &amp; Analysis</strong>.</p>
+                <p>Hello! I am a recent graduate in Electrical and Electronic Engineering (EEE), currently seeking PhD opportunities in the United States. My research interests span across <strong>Trustworthy AI</strong>, <strong>Multi-Modal Learning</strong>, <strong>Generative Vision Models (Diffusion &amp; Flow Matching)</strong>, <strong>AI in Healthcare &amp; Biomedical Imaging</strong>, and <strong>Medical Image Reconstruction &amp; Analysis</strong>.</p>
                 <p>During my undergraduate studies, I worked on several research projects and developed a strong foundation in both theoretical concepts and practical implementations. I am passionate about solving complex engineering problems and contributing to cutting-edge research.</p>
                 <div class="hero-actions">
                     <a class="button primary" href="#publications">View research</a>
@@ -59,10 +59,11 @@
             <div>
                 <p class="eyebrow">Research Interests</p>
                 <ul class="compact-list">
-                    <li>Multimodal learning</li>
-                    <li>Generative vision models</li>
+                    <li>Trustworthy AI</li>
+                    <li>Multimodal Learning</li>
+                    <li>Diffusion Model & Flow-Matching</li>
                     <li>AI in healthcare</li>
-                    <li>Medical image reconstruction</li>
+                    <li>Medical Image Reconstruction</li>
                 </ul>
             </div>
             <div>
@@ -87,6 +88,29 @@
                 </div>
                 <a href="https://scholar.google.com/citations?hl=en&amp;user=OkULguIAAAAJ" target="_blank" rel="noreferrer">Google Scholar <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
+
+            <article class="publication">
+                <div class="paper-visual carousel" data-interval="3500" aria-label="Figures from FreqDoor research">
+                    <img class="active" src="assets/FreqDoor/attack_overview.png" alt="FreqDoor attack overview in frequency domain">
+                    <img src="assets/FreqDoor/training_overview.png" alt="FreqDoor training overview with frequency trigger injection">
+                    <img src="assets/FreqDoor/trigger_grid.png" alt="Grid of frequency-domain triggers for vision-language backdoor">
+                    <div class="carousel-dots" aria-hidden="true"></div>
+                </div>
+                <div class="paper-copy">
+                    <span class="paper-year">2026</span>
+                    <h3>FreqDoor: A Hidden Trojan in the Frequency Domain for Backdoor Attacks on Vision-Language Models</h3>
+                    <p class="authors"><strong>Yasir Arafat Prodhan</strong>,Sadad Hasan, Mohammad Imamul Hassan Bhuiyan</p>
+                    <p class="venue">Under Review</p>
+                    <div class="paper-links">
+                        <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-freqdoor">ABS</button>
+                        <a href="https://arxiv.org/abs/2609.07048" target="_blank" rel="noreferrer">PAPER</a>
+                        <a href="#" target="_blank" rel="noreferrer">CODE</a>
+                    </div>
+                    <div class="paper-abstract" id="abstract-freqdoor" hidden>
+                        <p>Vision-language models (VLMs) have recently shown excellent progress in open-ended image-to-text generation. However, their multimodal nature makes them persistently vulnerable to backdoor attacks. Existing backdoor triggers for VLMs are either spatial, textual, or bimodal, which may yield localized or recognizable trigger patterns. In this work, we explore a different attack surface and propose \ textsc {FreqDoor}, a training-time backdoor attack that implants triggers in the frequency domain. \ textsc {FreqDoor} mixes amplitude-spectrum components from a trigger-source image selectively while preserving the phase of a clean image to generate a spatially distributed and visually imperceptible trigger without modifying the textual input. We evaluate the attack on BLIP-2, InstructBLIP, and LLaVA for image captioning and visual question answering. On Flickr8k, \ textsc {FreqDoor} achieves attack success rates of 99.6%, 99.8%, and 98.4% on the three models, respectively, while preserving the semantic quality of the generated captions. On VQAv2, the corresponding attack success rates are 99.6%, 92.4%, and 79.6%.</p>
+                    </div>
+                </div>
+            </article>
 
             <article class="publication">
                 <div class="paper-visual carousel" data-interval="3200" aria-label="Figures from MRI reconstruction research">

@@ -77,9 +77,9 @@ img { max-width: 100%; }
 .carousel-dots { position: absolute; left: 14px; bottom: 12px; display: flex; gap: 5px; z-index: 2; }
 .carousel-dots span { width: 18px; height: 3px; border-radius: 3px; background: #d0ccd9; transition: width .3s, background .3s; }
 .carousel-dots span.active { width: 32px; background: var(--accent); }
-.paper-copy { position: relative; padding: 8px 72px 8px 0; align-self: center; }
-.paper-year { position: absolute; top: 0; right: 0; color: var(--line); font-size: 2.3rem; font-weight: 500; letter-spacing: -.05em; }
-.paper-copy h3 { margin: 0 0 10px; font-size: 1.15rem; line-height: 1.42; letter-spacing: -.02em; }
+.paper-copy { position: relative; padding: 8px 88px 8px 0; align-self: center; }
+.paper-year { position: absolute; top: 2px; right: 0; color: var(--line); font-size: 2rem; font-weight: 500; letter-spacing: -.05em; line-height: 1; pointer-events: none; }
+.paper-copy h3 { margin: 0 0 10px; font-size: 1.15rem; line-height: 1.42; letter-spacing: -.02em; overflow-wrap: break-word; }
 .authors, .venue { margin: 4px 0; font-size: .87rem; }
 .authors { color: var(--muted); }
 .authors strong { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
